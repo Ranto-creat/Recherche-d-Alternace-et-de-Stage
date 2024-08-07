@@ -9,7 +9,7 @@
   - `name`
   - `email`
   - `password`
-
+********
 - **Methods:**
   - `register()`
   - `login()`
@@ -78,3 +78,36 @@
 - **Methods:**
   - `updateStatus()`
 
+### 8. **JobOffer:**
+
+- `id`
+- ``title``
+- ``description``
+- ``location``
+- ``publicationDate``
+- ``expirationDate``
+- ``requiredSkills``
+- ``User`` (Component)
+
+Certainly! Below is a class definition for `CV` (Curriculum Vitae) that includes typical properties and methods relevant to a CV in the context of job applications.
+
+### Class: CV
+
+- **Properties:**
+  - `id` (Unique identifier for the CV)
+  - `student` (Reference to the Student who owns the CV)
+  - `personalInformation` (e.g., name, contact information)
+  - `education` (List of educational qualifications)
+  - `skills` (List of skills)
+  - `workExperience` (List of ProfessionalExperience)
+  - `projects` (List of projects)
+  - `certifications` (List of certifications)
+
+- **Methods:**
+  - `addEducation(degree, institution, startDate, endDate, description)`
+  - `addSkill(skill)`
+  - `addWorkExperience(jobTitle, company, startDate, endDate, description)`
+  - `addProject(projectTitle, description)`
+  - `addCertification(certificationName, issuingOrganization, dateIssued)`
+  - `updatePersonalInformation(name, contactInfo)`
+  - `display()` (Displays the CV in a user-friendly format)

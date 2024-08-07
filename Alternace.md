@@ -78,3 +78,34 @@
 - **Méthodes :**
   - `mettreAJourStatut()`
 
+### 8. **OffreD_emploi :**
+
+- ``id``
+- ``titre``
+- ``description``
+- ``localisation``
+- ``date_de_publications``
+- ``date_d_expiration``
+- ``competences_requise``
+- ``User`` (Composant)
+
+### Classe : CV
+
+- **Propriétés :**
+  - `id` (Identifiant unique pour le CV)
+  - `student` (Référence à l'étudiant qui possède le CV)
+  - `personalInformation` (par exemple, nom, informations de contact)
+  - `education` (Liste des qualifications éducatives)
+  - `skills` (Liste des compétences)
+  - `workExperience` (Liste des expériences professionnelles)
+  - `projects` (Liste des projets)
+  - `certifications` (Liste des certifications)
+
+- **Méthodes :**
+  - `addEducation(diplôme, établissement, dateDébut, dateFin, description)`
+  - `addSkill(compétence)`
+  - `addWorkExperience(titrePoste, entreprise, dateDébut, dateFin, description)`
+  - `addProject(titreProjet, description)`
+  - `addCertification(nomCertification, organismeÉmetteur, dateDélivrance)`
+  - `updatePersonalInformation(nom, informationsContact)`
+  - `display()` (Affiche le CV dans un format convivial)
